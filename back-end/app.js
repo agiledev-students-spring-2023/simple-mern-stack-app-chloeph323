@@ -82,7 +82,6 @@ app.get('/about', async (req, res) => {
   try {
     res.json({
       txt: 'My name is Chloe Hawkins, I am a Junior at NYU Shanghai (displaced to New York due to covid), and in the past year I switched majors to study Computer Science. And, because I made this change a bit late in the game, per say, I’m trying to take computer science classes that will expose me to as many technologies as possible before I graduate (Agile Development and Devopps seems like the perfect class for that).  So far, my programming language of choice is Python, CAD projects are my favorite CS projects, and I love using figma for UX design :) I’ve found switching to computer science to be difficult so far because I’ve had to cram courses (to graduate on time) while also preparing for internship interviews - both of which, I’ve learned, eat up quite a bit of time. However, after grinding for the past year I was able to get an internship with Goldman Sachs this summer (which still doesn’t feel real but THANK GOD because I’m running out of time ), though I was just informed that the division I’ll work for will exclusively use Java (ew - time to start learning yet another coding language).  Some fun facts about me are that I did karate from 4 -18 years old and in High School went to study it abroad in Japan, also my favorite food is (unsurprisingly) sushi :) ',
-      
       image: 'images/me.jpg',
     })
   }catch (err) {

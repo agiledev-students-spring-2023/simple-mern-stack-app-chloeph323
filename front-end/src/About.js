@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
+import './About.css'
 import axios from 'axios'
+
 
 /**
  * A React component that represents one Message in the list of messages.
@@ -43,7 +45,7 @@ return (
       <h1>About Me</h1>
 
       {error && <p className="MessageForm-error">{error}</p>}
-      <img src={myImage} alt='' style={{maxHeight:"250px", width:"auto"}}/>
+      <image src={myImage} alt='' style={{maxHeight:"250px", width:"auto"}}/>
       <p style={{ width: '35%', margin: 'auto', lineHeight: '2'}}>
         {myText}
       </p>
