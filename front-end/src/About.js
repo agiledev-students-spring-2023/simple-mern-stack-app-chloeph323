@@ -19,17 +19,15 @@ const About = props => {
         axios
           .get(`${process.env.REACT_APP_SERVER_HOSTNAME}/about`)
           .then(response => {
-            // axios bundles up all response data in response.data property
             const aboutText = response.data.txt 
-            const imageLink = response.data.image
+            const imageURL = response.data.img
             setText(aboutText)
-            setImage(imageLink)
+            setImage(imageURL)
           })
           .catch(err => {
             setError(err)
           })
           .finally(() => {
-            // the response has been received, so remove the loading icon
             setLoaded(true)
           })
       }
@@ -45,7 +43,7 @@ return (
       <h1>About Me</h1>
 
       {error && <p className="MessageForm-error">{error}</p>}
-      <image src={myImage} alt='' style={{maxHeight:"250px", width:"auto"}}/>
+      <img src={myImage} alt='' style={{maxHeight:"250px", width:"auto"}}/>
       <p style={{ width: '35%', margin: 'auto', lineHeight: '2'}}>
         {myText}
       </p>
